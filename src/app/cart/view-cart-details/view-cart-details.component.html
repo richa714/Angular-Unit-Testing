@@ -1,0 +1,17 @@
+<div class="container container-fluid">
+  <div class="row">
+    Cart
+  </div>
+  <div class="row table-top">
+    <div class="col-md-3">Id</div>
+    <div class="col-md-3">Name</div>
+    <div class="col-md-3">Price</div>
+    <div class="col-md-3">Model</div>
+  </div>
+  <div class="row background-top" *ngFor="let item of items">
+    <div class="col-md-3">{{item.id}}</div>
+    <div class="col-md-3">{{item.name}}</div>
+    <div class="col-md-3">{{item.price}}</div>
+    <div class="col-md-3">{{item.model}}</div>
+  </div>
+</div>
