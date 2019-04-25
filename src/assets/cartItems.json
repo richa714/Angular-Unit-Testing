@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "itm1",
+      "name": "Television",
+      "price": 230000,
+      "model": "Sony va2232"
+    },
+    {
+      "id": "itm2",
+      "name": "Mobile",
+      "price": 12000,
+      "model": "Asus sd4323"
+    },
+    {
+      "id": "itm3",
+      "name": "Refrigerator",
+      "price": 34000,
+      "model": "Whirlpool dsw2323"
+    },
+    {
+      "id": "itm4",
+      "name": "HDD",
+      "price": 2300,
+      "model": "Sony 7643"
+    },
+    {
+      "id": "itm5",
+      "name": "Laptop",
+      "price": 100000,
+      "model": "Hp yj77"
+    }
+  ]
+}
