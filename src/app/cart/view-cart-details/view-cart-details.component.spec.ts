@@ -5,29 +5,29 @@ import { ViewCartDetailsComponent } from './view-cart-details.component';
 import { CartService } from '../cart.service';
 import { compute, greet, getCurrencies } from './view-cart-details.component';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { Item } from './Item.model';
+import {HttpClientModule} from '@angular/common/http';
 
-// describe('ViewCartDetailsComponent', () => {
-//   let component: ViewCartDetailsComponent;
-//   let fixture: ComponentFixture<ViewCartDetailsComponent>;
+describe('ViewCartDetailsComponent', () => {
+  let component: ViewCartDetailsComponent;
+  let fixture: ComponentFixture<ViewCartDetailsComponent>;
 
-//   beforeEach(async(() => {
-//     TestBed.configureTestingModule({
-//       declarations: [ViewCartDetailsComponent]
-//     })
-//       .compileComponents();
-//   }));
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      imports:[HttpClientModule],
+      declarations: [ViewCartDetailsComponent]
+    })
+      .compileComponents();
+  }));
 
-//   beforeEach(() => {
-//     fixture = TestBed.createComponent(ViewCartDetailsComponent);
-//     component = fixture.componentInstance;
-//     fixture.detectChanges();
-//   });
-
-//   it('should create', () => {
-//     expect(component).toBeTruthy();
-//   });
-// });
+  beforeEach(() => {
+    fixture = TestBed.createComponent(ViewCartDetailsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });  
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
 
 // ------------------------- Very Basic Testing------------------------------
 
