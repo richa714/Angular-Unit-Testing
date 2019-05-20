@@ -33,5 +33,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;    
     expect(compiled.querySelector('div').textContent).toContain('Welcome to AngularUnitTesting!');
+    //expect(compiled.query('.title')as HTMLInputElement).toContain('Welcome to AngularUnitTesting!');
   });
 });
